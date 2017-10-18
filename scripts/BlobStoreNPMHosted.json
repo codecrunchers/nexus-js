@@ -1,0 +1,6 @@
+{
+  "name": "hostedNPMBlobStore",
+  "type": "groovy",
+  "content": "blobStore.createFileBlobStore('npm-hosted', 'npm')"
+}
+

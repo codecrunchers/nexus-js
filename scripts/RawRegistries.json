@@ -1,0 +1,6 @@
+{
+  "name": "rawregsetup",
+  "type": "groovy",
+  "content": "repository.createRawHosted('releases','releases');"
+}
+

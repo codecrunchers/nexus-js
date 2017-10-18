@@ -1,0 +1,7 @@
+{
+  "name": "groupNPMBlobStore",
+  "type": "groovy",
+  "content": "blobStore.createFileBlobStore('npm-group', 'npm')"
+}
+
+

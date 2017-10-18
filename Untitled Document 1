@@ -1,0 +1,18 @@
+# Create 3 Blob Stores
+curl -v -X POST -u admin:admin123 --header "Content-Type: application/json" 'http://localhost:8081/service/siesta/rest/v1/script' -d @scripts/BlobStoreNPMGroup.json
+curl -v -X POST -u admin:admin123 --header "Content-Type: application/json" 'http://localhost:8081/service/siesta/rest/v1/script' -d @scripts/BlobStoreNPMProxy.json
+curl -v -X POST -u admin:admin123 --header "Content-Type: application/json" 'http://localhost:8081/service/siesta/rest/v1/script' -d @scripts/BlobStoreNPMHosted.json
+
+curl -v -X POST -u admin:admin123 --header "Content-Type: text/plain" 'http://localhost:8081/service/siesta/rest/v1/script/BlobStoreNPMGroup/run'
+curl -v -X POST -u admin:admin123 --header "Content-Type: text/plain" 'http://localhost:8081/service/siesta/rest/v1/script/BlobStoreNPMProxy/run'
+curl -v -X POST -u admin:admin123 --header "Content-Type: text/plain" 'http://localhost:8081/service/siesta/rest/v1/script/BlobStoreNPMHosted/run'
+
+
+#Create Private, Hosted & Group Reg  
+curl -v -X POST -u admin:admin123 --header "Content-Type: application/json" 'http://localhost:8081/service/siesta/rest/v1/script' -d @scripts/NPMRegsitries.json
+curl -v -X POST -u admin:admin123 --header "Content-Type: text/plain" 'http://localhost:8081/service/siesta/rest/v1/script/NPMRegsitries/run'
+
+
+
+
+

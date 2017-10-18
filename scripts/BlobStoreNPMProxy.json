@@ -1,0 +1,5 @@
+{
+  "name": "proxyNPMBlobStore",
+  "type": "groovy",
+  "content": "blobStore.createFileBlobStore('npm-proxy', 'npm')"
+}
